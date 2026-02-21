@@ -53,7 +53,8 @@ export default defineConfig({
               text: '对象和类',
               collapsed: true,
               items: [
-                { text: '构造函数和析构函数', link: '/基础语法/对象和类/构造函数和析构函数.md' }
+                { text: '构造函数和析构函数', link: '/基础语法/对象和类/构造函数和析构函数.md' },
+                { text: '访问和修改类私有成员', link: '/基础语法/对象和类/访问和修改类私有成员.md' }
               ]
             }
           ]
