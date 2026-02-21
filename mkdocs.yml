@@ -1,0 +1,45 @@
+site_name: CPP MODERN NOTES
+site_url: https://github.com/wmjim/cpp-modern-notes
+site_author: mengw
+site_description: 
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # 亮色模式
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    # 暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs        # 顶部标签导航
+    - navigation.sections    # 侧边栏分组
+    - navigation.top         # 回到顶部按钮
+    - search.highlight       # 搜索高亮
+    - search.suggest         # 搜索建议
+    - content.code.copy      # 代码复制按钮
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - pymdownx.highlight:      # 代码高亮
+      anchor_linenums: true
+  - pymdownx.superfences     # 代码块
+  - pymdownx.tabbed:         # 标签页
+      alternate_style: true
+  - admonition               # 提示框（note/warning等）
+  - pymdownx.details         # 折叠块
+  - attr_list
+  - md_in_html

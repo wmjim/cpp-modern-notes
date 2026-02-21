@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("/fonts/SourceSerifPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LXGW WenKai";
+  src: url("/fonts/LXGWWenKai-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maple Mono";
+  src: url("/fonts/MapleMono-NL-NF-CN.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* 应用字体 */
+:root {
+  --vp-font-family-base: "LXGW WenKai", "Source Serif Pro", serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+}
+
+/* 英文字体优先 */
+.vp-doc {
+  font-family: "Source Serif Pro", "LXGW WenKai", serif;
+}
+
+/* 代码字体 */
+div[class*="language-"] {
+  /* font-family: 'JetBrains Mono', ui-monospace, monospace; */
+  font-family: 'JetBrains Mono', 'LXGW WenKai', 'Noto Sans Mono   CJK SC', ui-monospace, monospace; 
+}
