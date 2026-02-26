@@ -5,12 +5,15 @@ export default defineConfig({
   title: "Modern Cpp Notes",
   description: "待补充",
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap' }]
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css' }]
   ],
-  markdown: {
-    typographer: false,
-    quotes: '""""'
-  },
+  // markdown: {
+  //   typographer: true,
+  //   quotes: '""""'
+  // },
   base: '/cpp-modern-notes/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -41,6 +44,9 @@ export default defineConfig({
             { text: 'auto', link: '/关键字/auto.md' },
             { text: 'decltype', link: '/关键字/decltype.md' },
             { text: 'const', link: '/关键字/const.md' },
+            { text: 'final', link: '/关键字/final.md' },
+            { text: 'override', link: '/关键字/override.md' },
+
 
           ]
         }
