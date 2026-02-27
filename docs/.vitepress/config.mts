@@ -24,7 +24,7 @@ export default defineConfig({
       { text: '环境搭建', link: '/环境搭建/index.md' },
       { text: '基础语法', link: '/基础语法/' },
       { text: '关键字', link: '/关键字/index.md' },
-      { text: '新特性', link: '/新特性/' },
+      { text: '新特性', link: '/新特性/index.md' },
       { text: '面试题', link: '/面试题/index.md' }
     ],
 
@@ -56,6 +56,20 @@ export default defineConfig({
           text: '基础语法',
           items: [
             {
+              text: '类型系统',
+              collapsed: true,
+              items: [
+                { text: '基本数据类型', link: '/基础语法/类型系统/基本数据类型.md' },
+                { text: '数组', link: '/基础语法/类型系统/数组.md' },
+                { text: '指针', link: '/基础语法/类型系统/指针.md' },
+                { text: '引用', link: '/基础语法/类型系统/引用.md' },
+                { text: '结构体', link: '/基础语法/类型系统/结构体.md' },
+                { text: '共用体', link: '/基础语法/类型系统/共用体.md' },
+                { text: '枚举', link: '/基础语法/类型系统/枚举.md' },
+                { text: 'C 风格字符串', link: '/基础语法/类型系统/C 风格字符串.md' }
+              ]
+            },
+            {
               text: '对象和类',
               collapsed: true,
               items: [
@@ -81,7 +95,30 @@ export default defineConfig({
       '/新特性/': [
         {
           text: '新特性',
-          items: []
+          items: [
+            {
+              text: '移动语义',
+              collapsed: true,
+              items: [
+                { text: '值类别', link: '/新特性/移动语义/值类别.md' },
+                { text: '左值引用', link: '/新特性/移动语义/左值引用.md' },
+                { text: '右值引用', link: '/新特性/移动语义/右值引用.md' },
+                { text: 'std::forward 详解', link: '/新特性/移动语义/std::forward详解.md' },
+                { text: 'emplace 与性能优化', link: '/新特性/移动语义/emplace与性能优化.md' },
+
+              ]
+            },
+            {
+              text: '智能指针',
+              collapsed: true,
+              items: [
+                { text: '智能指针基础', link: '/新特性/智能指针/智能指针基础.md' },
+                { text: 'unique_ptr', link: '/新特性/智能指针/unique_ptr.md' },
+                { text: 'shared_ptr', link: '/新特性/智能指针/shared_ptr.md' },
+                { text: 'weak_ptr', link: '/新特性/智能指针/weak_ptr.md' }
+              ]
+            }
+          ]
         }
       ]
     },
