@@ -13,3 +13,10 @@
 div[class*="language-"] {
   font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 }
+
+/* 修复加粗失效问题 */
+.vp-doc strong,
+.vp-doc b {
+  font-weight: 700 !important;
+  color: #000;
+}
