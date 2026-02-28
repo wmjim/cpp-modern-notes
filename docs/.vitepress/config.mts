@@ -47,6 +47,8 @@ export default defineConfig({
             { text: 'constexpr', link: '/关键字/constexpr.md' },
             { text: 'final', link: '/关键字/final.md' },
             { text: 'override', link: '/关键字/override.md' },
+            { text: 'static', link: '/关键字/static.md' },
+
 
 
           ]
@@ -179,7 +181,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/wmjim' }
     ]
   }
 })
